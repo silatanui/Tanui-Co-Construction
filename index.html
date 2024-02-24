@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Outfit:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <!--##################################################################
+    Navbar 
+    #################################################################-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark fixed-top py-3"
+        style="background-color: aliceblue !important;">
+        <a class="navbar-brand" href="#">Tanui & Co. Construction</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#services">Services <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#blog" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--##################################################################
+    Carousel
+    #################################################################-->
+    <div id="carouselId" class="carousel slide carousel-fade mt-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="box"></div>
+                <img src="images/Slide/Slide (1).png" alt="First slide">
+                <div class="carousel-caption d-md-block">
+                    <h3>Who We Are</h3>
+                    <p>With over 50 years of combined experience, Joel & Co. Construction has steadily grown from a
+                        modest home remodeling contractor into a large-scale commerical and residential construction
+                        business.</p>
+                    <button type="button" class="btn btn-info col-lg-4 col-md-6 col-sm-12 col-12 d-block mx-auto"
+                        style="background-color: #044ebd !important; border:none">Get Started <i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="box"></div>
+                <img src="images/Slide/Slide (2).png" alt="Second slide">
+                <div class="carousel-caption d-md-block">
+                    <h3>General Contracting</h3>
+                    <p>From remodeling to building a new home from the ground up, Alex & Co. is passionate about
+                        creating a rewarding construction experience for our clients, our designers and trade partners,
+                        and our team.</p>
+                    <button type="button" class="btn btn-info col-lg-4 col-md-6 col-sm-12 col-12 d-block mx-auto"
+                        style="background-color: #044ebd !important; border:none">Get Started <i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="box"></div>
+                <img src="images/Slide/Slide (3).png" alt="Third slide">
+                <div class="carousel-caption d-md-block">
+                    <h3>Custom Home Building</h3>
+                    <p>The team at Alex & Co. possess a powerful understanding of the design process, and the creativity
+                        to synthesize it with construction planning.</p>
+                    <button type="button" class="btn btn-info col-lg-4 col-md-6 col-sm-12 col-12 d-block mx-auto"
+                        style="background-color: #044ebd !important; border:none">Get Started <i class="fa fa-angle-double-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--##################################################################
+    About Us
+    #################################################################-->
+    <section class="col-lg-12 about-us  py-5 text-center my-2">
+        <h2 class="" id="about-us">About Us</h2>
+        <div class="line"></div>
+        <p class="section-text col-lg-10 col-sm-12 col-md-12 mx-auto">With over 50 years of combined experience, Joel &
+            Co. Construction has steadily grown
+            from a modest home remodeling contractor into a large-scale commerical and residential construction
+            business. Today, the company continues to maintain their client-first approach, and insist on bringing
+            integrity, honesty, and transparency to every job, every time.
+
+        </p>
+        <div class="row col-lg-11 col-md-12 col-sm-12 col-12 my-3 p-4 mx-auto">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-2 border-lg text-left">
+                <p><i>The companys continued success is due in part to their commitment to practicing safe construction
+                        methods
+                        and strict compliance with all applicable laws, rules and regulations. They work closely with
+                        clients, civil
+                        and structural engineers, architects and designers with a collaborative mindset and a common
+                        goal: to
+                        deliver a successful and beautiful project.</i></p>
+                <button type="button" class="btn btn-primary my-2 col-5 mx-auto d-block"> Learn More <i
+                        class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-2 border-lg">
+                <img src="images/Blog/Image 6.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 100%;">
+            </div>
+        </div>
+    </section>
+
+
+    <!--##################################################################
+    Services section
+    #################################################################-->
+    <section class="container-fluid col-10 services  py-5">
+        <h2 class="" id="services">Our Services</h2>
+        <div class="line"></div>
+        <p class="section-text">Alex & Co. Construction is often recognized as one of the leading general contracting
+            companies in Los Angeles due to superior craftsmanship and ability to understand and execute high-level
+            aesthetic excellence that clients desire. Whether the project calls for a traditional, contemporary, or
+            modern design, the team will oversee every phase of construction. These teams are comprised of experts who
+            specialize in numerous types of services and construction projects:
+        </p>
+
+        <div class="row my-2 py-2">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-dark bg-light">
+                    <img class="card-img-top" src="images/Services/Bathroom remodelling.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Bathroom Remodelling</h4>
+                        <p class="card-text">Alex & Co. can transform any bathroom into a desirable retreat ⁠— bringing
+                            the vision of the homeowner to life by redesigning and remodeling their old bathrooms and
+                            transforming them into a dream space.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-dark bg-light">
+                    <img class="card-img-top" src="images/Services/Commercial Construction.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Commercial Construction</h4>
+                        <p class="card-text">Whether you need to renovate a restaurant or build a new, high-end spa,
+                            Alex & Co.’s quality workmanship makes the planning and construction process simple and easy
+                            ⁠— resolving in a practical.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-dark bg-light">
+                    <img class="card-img-top" src="images/Services/Custom home Building.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Custom Home Building</h4>
+                        <p class="card-text">The team at Alex & Co. possess a powerful understanding of the design
+                            process, and the creativity to synthesize it with construction planning.Trust us for the
+                            task of customizing your home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-dark bg-light">
+                    <img class="card-img-top" src="images/Services/General Contracting.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">General Contracting</h4>
+                        <p class="card-text">From remodeling to building a new home from the ground up, Alex & Co. is
+                            passionate about creating a rewarding construction experience for our clients, our
+                            designers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-dark bg-light">
+                    <img class="card-img-top" src="images/Services/Kitchen remodelling.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Kitchen Remodelling</h4>
+                        <p class="card-text">Remodeling the kitchen is a great way to give a home a facelift. Working
+                            within the client’s budget, Alex & Co. provides the best service and return on investment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-dark bg-light">
+                    <img class="card-img-top" src="images/Services/Room Addition.png" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Room Addition</h4>
+                        <p class="card-text">Adding additional rooms is an important job and is best left to an
+                            experienced room addition contractor. Alex & Co. provides renditions of the general.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--##################################################################
+    Blog section
+    #################################################################-->
+    <section class="container blog  py-5">
+        <h2 class="" id="blog">Blog</h2>
+        <div class="line"></div>
+        <p class="section-text">Are you tired of your outdated kitchen and craving a fresh, modern look? Kitchen
+            remodeling might be the answer to breathe new life into your culinary haven. From enhancing functionality to
+            boosting aesthetic appeal, a well-executed kitchen remodel can elevate the heart of your home.</p>
+
+        <div class="container-fluid row">
+            <!-- Blog 1 -->
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3">
+                <img src="images/Blog/Image 1.png" alt="">
+            </div>
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3 ">
+                <h3>Transform Your Space: A Guide to Kitchen Remodeling</h3>
+                <p>Are you tired of your outdated kitchen and craving a fresh, modern look? Kitchen remodeling might be
+                    the answer to breathe new life into your culinary haven. From enhancing functionality to boosting
+                    aesthetic appeal, a well-executed kitchen remodel can elevate the heart of your home. Here's a brief
+                    guide to help you navigate the exciting journey of transforming your kitchen. 1. Define Your Goals:
+                    Begin by identifying your goals for the remodel. Are you looking to create a more open…
+                </p>
+                <a href="">Read More...</a>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3">
+                <img src="images/Blog/Image 2.png" alt="">
+            </div>
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3 ">
+                <h3>Building a Greener Future: Sustainable Homes in Los Angeles</h3>
+                <p>Embracing Eco-Friendly Construction In an era where environmental sustainability is more crucial than
+                    ever, the construction industry is evolving to meet the growing demand for eco-friendly practices.
+                    At Alex & Co. Construction, a leading general contractor in Los Angeles, we are committed to
+                    pioneering sustainable home building solutions. Our approach to eco-friendly construction not only
+                    minimizes environmental impact but also enhances the living experience for homeowners in Los
+                    Angeles. Innovations in Sustainable Home Building Eco-Friendly Materials and Techniques: The
+                    cornerstone…
+                </p>
+                <a href="">Read More...</a>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3">
+                <img src="images/Blog/Image 3.png" alt="">
+            </div>
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3 ">
+                <h3>Expanding Horizons: Making Room Additions in Your Home</h3>
+                <p>Expanding your home through room additions is a practical way to enhance your living space and
+                    increase property value. Whether you need an extra bedroom, a larger kitchen, or a dedicated home
+                    office, here are some key steps to consider when making room additions in your home: Plan Carefully
+                    Begin by envisioning the purpose of the new space. Consider the layout, size, and location of the
+                    addition. Think about how the new space will integrate with the existing structure and…
+                </p>
+                <a href="">Read More...</a>
+            </div>
+
+            <!-- Blog 4 -->
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3">
+                <img src="images/Blog/Image 4.png" alt="">
+            </div>
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3 ">
+                <h3>Beautiful Styles for Your Kitchen Remodel Project</h3>
+                <p>When it comes to kitchen remodel projects, choosing the right style is crucial for achieving a
+                    beautiful and functional space. Whether you prefer a classic, modern, or farmhouse-inspired kitchen,
+                    here are three stunning styles to consider for your renovation project: 1. Classic Elegance Classic
+                    kitchens never go out of style. They are characterized by timeless design elements that exude
+                    elegance and sophistication. Some key features of a classic kitchen include: Cabinetry: They often
+                    feature raised-panel or shaker-style cabinets with ornate…
+                </p>
+                <a href="">Read More...</a>
+            </div>
+
+            <!-- Blog 5 -->
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3">
+                <img src="images/Blog/Image 5.png" alt="">
+            </div>
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3 ">
+                <h3>Benefits of Custom Home Building Projects</h3>
+                <p>Building a home is a significant life decision, and choosing between buying an existing property or
+                    opting for a custom home building project can be a challenging choice. While pre-existing homes
+                    offer convenience, they may not always fulfill your unique vision and lifestyle needs. On the other
+                    hand, custom home building allows you to create a dream home from the ground up, tailor-made to suit
+                    your preferences and desires. In this blog, we explore the five major benefits of embarking…
+                </p>
+                <a href="">Read More...</a>
+            </div>
+
+            <!-- Blog 6 -->
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3">
+                <img src="images/Blog/Image 6.png" alt="">
+            </div>
+            <div class="col-lg-6 col md-6 col-sm-12 col-12 my-3 ">
+                <h3>Guide to Prepare For a Home Renovation Project</h3>
+                <p>Embarking on a home renovation project can be an exciting yet overwhelming endeavor. Whether you're
+                    planning to remodel your kitchen, renovate your bathroom, or give your entire home a makeover,
+                    proper preparation is key to ensuring a successful and stress-free renovation experience. In this
+                    guide, we will walk you through the essential steps to prepare for your project. Define Your
+                    Renovation Goals Start by clearly defining your renovation goals. What do you hope to achieve with
+                    this project? Identify the…
+                </p>
+                <a href="">Read More...</a>
+            </div>
+        </div>
+    </section>
+
+    <!--##################################################################
+    Maps Section
+    #################################################################-->
+    <section class="container-fluid about-us  py-5 text-center">
+        <h2 class="" id="map">Visit Us Today</h2>
+        <div class="line"></div>
+        <p class="section-text">With over 50 years of combined experience, Joel & Co. Construction has steadily grown
+            from a modest home remodeling contractor into a large-scale commerical and residential construction
+            business. Today, the company continues to maintain their client-first approach, and insist on bringing
+            integrity, honesty, and transparency to every job, every time.
+            The companys continued success is due in part to their commitment to practicing safe construction methods
+            and strict compliance with all applicable laws, rules and regulations. They work closely with clients, civil
+            and structural engineers, architects and designers with a collaborative mindset and a common goal: to
+            deliver a successful and beautiful project.
+        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.407753837563!2d36.83489157759592!3d-1.2673908811987502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f16c3688078d5%3A0x10d5a6049e7f9859!2sPangani%20Shopping%20Center!5e1!3m2!1sen!2snl!4v1708705804091!5m2!1sen!2snl"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--##################################################################
+    Gallery Section
+    #################################################################-->
+    <section class="container-fluid gallery  py-5 text-center">
+        <h2 class="" id="gallery">Gallery</h2>
+        <div class="line"></div>
+        <p class="section-text">With over 50 years of combined experience, Joel & Co. Construction has steadily grown
+            from a modest home remodeling contractor into a large-scale commerical and residential construction
+            business.
+        </p>
+        <div class="row col-lg-11 col-md-12 col-sm-12 col-12 mx-auto">
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 1.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 2.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 3.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 4.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 5.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 6.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 7.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-2 col-12">
+                <img src="images/Blog/Image 8.png"
+                    class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""
+                    style="width: 98%;">
+            </div>
+        </div>
+    </section>
+
+
+    <!--##################################################################
+    Footer
+    #################################################################-->
+    <footer>
+        <div class="row col-12 mx-auto mx-2">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12 my-2">
+                <p class="navbar-brand" href="#">Tanui & Co. Construction</p>
+                <p>Expanding your home through room additions is a practical way to enhance your living space and
+                    increase property value. Whether you need an extra bedroom, a larger kitchen, or a dedicated home
+                    office, here are some key steps to consider when making room additions in your home.</p>
+                <div class="icons my-3">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-lg-3 my-2 col-md-12 col-sm-12 col-12 ml-lg-5">
+                <h4>Quick Links</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Gallery</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 col-12 my-2">
+                <h4>Other Links</h4>
+                <ul>
+                    <li>Construction</li>
+                    <li>New Technology</li>
+                    <li>Construction Materials</li>
+                    <li>Team</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
